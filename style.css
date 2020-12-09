@@ -1,0 +1,118 @@
+style.css
+body{
+    font-family: 'Montserrat', sans-serif;
+    height: 2000px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 4px   
+}
+
+header{
+    margin:0;
+    padding:20;
+    background:linear-gradient(rgb(186, 101, 61),rgb(182, 101, 56));
+    height: 45px;
+}
+nav{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    background-color: #544741;
+}
+.nav_h{
+    position: fixed;
+    background-color: grey;
+    animation-name: nav;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.menu{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: right;
+}
+.lists{
+    display:inline-block;
+    float: left;
+    padding: 14px 16px;
+    color:#fff;
+    font-weight:bold;
+
+}
+.display{
+    margin:0;
+    padding:0;
+    width:100%;
+}
+.holder{
+    position: absolute;
+    top:35%;
+    left:22%;
+}
+.holder span{
+    display: block;
+    line-height: 60px;
+    font-weight: bold;
+    font-size: 80px;
+    color:#fff;
+}
+.holder span:nth-child(1){
+    font-size:80px;
+    animation-name: text;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    color:#fff;
+}
+.holder span:nth-child(2){
+   margin-buttom:15px;
+    animation-name: text1;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+
+}
+.holder button{
+    display: inline-block;
+    padding: 10px 12px;
+    background: rgb(138, 101, 84);
+    animation-name: button;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    border:none;
+    font-weight: bold;
+    color: #fff;
+}
+}.display img{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top:20%;
+    right:25%;
+    border-radius:50%;
+    animation-name: image;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes text{
+    0%{transform:translateY(-80%); opacity: 0;}
+    80%{transform:translateY(10%); }
+}
+@keyframes text1{
+    0%{transform:translateX(-80%); opacity: 0;}
+    80%{transform:translateX(10%); }
+}
+@keyframes button{
+    0%{transform:translateY(80%); opacity: 0;}
+    80%{transform:translateY(-10%); }
+}
+@keyframes image{
+    0%{transform:translateX(80%) rotate(150deg); opacity: 0;}
+    80%{transform:translateX(-10%) ;}
+}
+
+@keyframes nav{
+    0%{transform:translateY(-150%) ; opacity: 0;}
+    
+}
